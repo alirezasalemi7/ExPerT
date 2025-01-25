@@ -39,7 +39,7 @@ score = expert_score.expert(
 
 # Examples
 
-You can view an example of ExPerT's evaluation in [this](https://colab.research.google.com/drive/1_Sfr5XOjv9qbQ4daHe1z3FfCtS_mnkI5?usp=sharing) notebook.
+You can see an example of ExPerT's evaluation in [this](https://colab.research.google.com/drive/1_Sfr5XOjv9qbQ4daHe1z3FfCtS_mnkI5?usp=sharing) notebook.
 
 # Reference
 
