@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "expert-score"
+version = "0.0.1"
+description = "The implementation of the ExPerT score."
+readme = "README.md"
+license = { file = "LICENSE.txt" }  # Correctly specify license in the `project` section
+authors = [
+    { name = "Alireza Salemi", email = "asalemi@cs.umass.edu" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+
+dependencies = [
+    "backoff==2.2.1",
+    "json5==0.9.25",
+    "openai==1.60.1",
+    "parse==1.20.2",
+    "protobuf==5.29.3",
+    "setuptools==75.2.0",
+    "tqdm==4.66.5",
+    "transformers==4.45.2",
+    "vllm==0.6.6",
+    "google-generativeai==0.8.4",
+]
+
+[tool.setuptools]
+# Ensure license file is correctly specified in `tool.setuptools` section
+license-files = ["LICENSE.txt"]
+
+[tool.setuptools.packages.find]
+include = ["expert*", "LICENSE.txt"]
+exclude = ["expert.tests", "expert.eval"]
